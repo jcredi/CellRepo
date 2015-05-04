@@ -1,0 +1,23 @@
+#include "cell.h"
+
+
+// Member functions definitions
+
+
+cell::cell()
+{
+cout << "Calling constructor" << endl;
+  x = 0;
+  y = 1;
+}
+
+
+
+cell::~cell()
+{
+  cout << "Calling destructor" << endl;
+  if(L!=NULL)
+  { delete L; }
+  if(R!=NULL)
+  { delete R; }
+}

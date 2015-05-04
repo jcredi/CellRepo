@@ -1,0 +1,49 @@
+/*------------------------------------------------
+   Bla bla bla
+   Author: Jacopo Credi
+   University of Warwick, May 2015
+-------------------------------------------------*/
+
+// libraries //
+#include <iostream>
+#include <vector>
+#include <random>
+#include <chrono>
+
+// headers //
+#include "Cell.h"
+//#include "mtwist.h"
+
+using namespace std;
+
+/*-----------------------------------------------*/
+
+int main () {
+
+	Cell johnny;
+//	unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+//	
+//	std::random_device rd;
+
+//  	std::mt19937 generator (seed);  // mt19937 is a standard mersenne_twister_engine
+//  	std::cout << "Random value: " << generator() << std::endl;
+    
+    std::random_device rd;
+	std::mt19937 gen(rd());
+	std::uniform_real_distribution<double> urand(0, 1);
+
+//    unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+//  	std::mt19937 generator (seed);
+ 
+    std::cout << urand(gen) << " is a random number" << endl;
+    
+    return 0;
+}
+
+
+
+
+//for () {
+//	// code
+//}
+//cout << "To exit, press 'm'" << endl;
