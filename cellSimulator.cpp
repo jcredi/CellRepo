@@ -1,5 +1,5 @@
 /*------------------------------------------------
-   Bla bla bla
+   Draft project: cancer cells agent-based model
    Author: Jacopo Credi
    University of Warwick, May 2015
 -------------------------------------------------*/
@@ -30,11 +30,3 @@ int main () {
     
     return 0;
 }
-
-
-
-
-//for () {
-//	// code
-//}
-//cout << "To exit, press 'm'" << endl;
